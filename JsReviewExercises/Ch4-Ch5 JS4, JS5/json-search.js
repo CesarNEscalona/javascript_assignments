@@ -32,6 +32,9 @@ document.getElementById("button").onclick = checkName;
 
 // create a function that will check the name searched with the Json info
 function checkName() {
+    // This will clear out any info in the p tag when the button is clicked.
+    document.getElementById("print").innerHTML = "";
+
     // flag variable used in line 95 and 99
     let total = 0;
     // this grabs what the user types in and converts it to lower case
@@ -79,7 +82,7 @@ function checkName() {
                 Mother.textContent = String6;
 
                 // This grabs the parent element
-                let text = document.getElementsByTagName("h4")[0];
+                let text = document.getElementById("print");
 
                 // This connects the child variables to the parents to print out
                 text.appendChild(Names);
