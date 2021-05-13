@@ -1,0 +1,45 @@
+<!--
+* Author: Cesar Escalona
+* SDEV 328 - Full stack Web Dev
+* This page will feature an input that asks a user to type a name to search for. It contains a submit
+* button and a clear info button to clear previous searches.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ch4 Ch5 JS Review Exercises</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+<form action="#" method="post" class="form" id="form">
+    <div class="col">
+        <div class="container bg-light"><br>
+            <h3 class="display-5">Input a name to search for</h3>
+            <input type="text" id="search" name="search">
+            <button type="button" class="btn btn-info" id="button" value="submit">Submit</button>
+            <br><br><br>
+            <a class="btn btn-info" onclick="location.reload()" role="button">Clear Info</a><br><br>
+        </div>
+    </div>
+</form>
+<div class="container">
+            <h4 class="display-5" id="sprint">
+                <p id="print">
+                </p>
+                <br>
+            </h4>
+</div>
+<script src="json-search.js"></script>
+</body>
+</html>
